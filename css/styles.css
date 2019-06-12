@@ -1,0 +1,56 @@
+.hidden {
+  display: none;
+}
+
+.container {
+
+}
+
+h1, h3, h4, {
+  text-align: center;
+  padding: 20px;
+}
+
+h5 {
+  text-align: center;
+}
+
+#quiz1, #quiz2 {
+  text-align: center;
+  padding: 20px;
+  margin: 30px;
+  vertical-align: middle;
+  border: solid;
+  border-color: lightgrey;
+  border-width: medium;
+}
+
+label {
+  padding-left: 10px;
+  padding-right: 10px;
+  font-weight: bold;
+}
+
+.hidden {
+  border: solid;
+  border-color: lightgrey;
+}
+
+div {
+  margin: 20px;
+}
+
+.center {
+  display: block;
+  margin: 0 auto;
+  width: 50%;
+}
+
+.button {
+  padding-top: 10px;
+  text-align: center;
+}
+
+li {
+  display: inline;
+}

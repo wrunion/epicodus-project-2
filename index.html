@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Code School Quiz</title>
+    <!--Bootstrap, and my own css-->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <!--jQuery CDN, followed by a link to my own scripts file-->
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.0.min.js"></script>
+    <script src="js/scripts.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Learn to code in Portland, Oregon</h1>
+      <h4>Do you want to explore a career in programming? Take our quiz to find out which resources may be right for you!</h4>
+
+      <form id="quiz1">
+         <p><strong>Do you live in or near Portland, Oregon?</strong></p>
+           <div class="form-check form-check-inline radio">
+             <label for "location">
+             <input class="form-check-input form-check-inline" type="radio" name="location" id="Portland" value="Portland"> Yes
+             </label>
+           </div>
+           <div class="form-check form-check-inline radio">
+             <label for "location">
+               <input class="form-check-input" type="radio" name="location" id="not-Portland" value="not-Portland"> No
+             </label>
+           </div>
+           <div class="button">
+             <button type="submit" class="btn btn-primary btn-block">Submit</button>
+           </div>
+         </form>
+
+      <form id="quiz2" class="hidden">
+
+        <h5>What is your goal?</h5>
+        <select class="form-control" id="goal">
+          <option></option>
+          <option value="1">A full-time job in the tech industry</option>
+          <option value="2">To upgrade my existing skills</option>
+          <option value="free">To learn for personal enrichment/as a hobby</option>
+        </select>
+
+        <h5>How much coding experience do you have?</h5>
+        <select class="form-control" id="experience">
+          <option></option>
+          <option value="1">None - I've never written code in my life</option>
+          <option value="2">Some - I've done a few tutorials online</option>
+          <option value="3">Moderate - I've written simple programs</option>
+          <option value="advanced">Advanced - I work in the industry, and am looking to upgrade my skills</option>
+        </select>
+<!--
+        <h5>Which language(s) do you want to learn?</h5>
+        <select class="form-control" id="language">
+          <option></option>
+          <option value="1">HTML, CSS, and Javascript</option>
+          <option value="python">Python</option>
+          <option value="advanced-js">Advanced Javascript (Node, React)</option>
+          <option value="4">Unsure, or all of the above</option>
+        </select>
+
+        <h5>Do you want to learn online, or in person?</h5>
+        <select class="form-control" id="online-or-irl">
+          <option></option>
+          <option value="online">Online</option>
+          <option value="in-person">In Person</option>
+          <option>Either is fine. Show me all the options</option>
+        </select>
+
+        <h5>How much do you want to spend?</h5>
+        <select class="form-control" id="amount">
+          <option></option>
+          <option value="free">Nothing. Show me the free resources!</option>
+          <option value="<$100">Less than $100</option>
+          <option value="<$1000">Less than $1,000</option>
+          <option value="code-camp">$8k-20k, for a fulltime "bootcamp" program</option>
+        </select>-->
+
+
+        <div class="button">
+           <button type="submit" class="btn btn-primary btn-block">Submit</button>
+         </div>
+      </form>
+        <!--
+        <h5></h5>
+        <select class="form-control" id="language">
+          <option></option>
+          <option value="1">Coffee</option>
+          <option value="2">Tea</option>
+          <option value="3">Kombucha</option>
+          <option value="4">Water</option>
+        </select>
+
+        <h5></h5>
+        <select class="form-control" id="language">
+          <option></option>
+          <option value="1">Coffee</option>
+          <option value="2">Tea</option>
+          <option value="3">Kombucha</option>
+          <option value="4">Water</option>
+        </select>
+
+        <h5></h5>
+        <select class="form-control" id="language">
+          <option></option>
+          <option value="1">Coffee</option>
+          <option value="2">Tea</option>
+          <option value="3">Kombucha</option>
+          <option value="4">Water</option>
+        </select>
+        <button class="btn btn-primary" type="submit">Submit</button>
+      </form>
+  a) HTML, CSS, and Javascript - beginner level
+  b) Python
+  c) Advanced Javascript (Node, React)
+  d) Unsure, or all of the above
+
+
+  How much experience with code do you have?
+  a) None - I've never written code in my life
+  b) Some - I've done a few tutorials online
+  c) Moderate - I've written simple programs
+  d) Serious - I already work in the industry, and am looking to upgrade my skills.
+
+  What is your goal?
+  a) A full-time job in the tech industry
+  b) To upgrade my existing skills
+  c) To learn for personal enrichment/as a hobby-->
+
+<!--Hidden divs that show the user their result:-->
+    <div class="hidden border border-primary" id="not-Portland">
+      <p><strong><em>This site focuses on resources available in Portland, Oregon, but here are some resources you can access from anywhere:</em></strong></p>
+      <!--<p><button type="btn btn-default" id="try-again">Click here to clear the form and try again!</button></p>-->
+    </div>
+
+    <div class="hidden free-resources affordable-resources online-resources online-result border border-secondary" id="free">
+      <h3>Free and Affordable Resources</h3>
+      <p>There's a lot of learning and networking that you can do on your own, without spending a dime! Free Code Camp, W3Schools, Treehouse, Code Academy, and Coursera all have an abundance of free and affordable resources. Yes, the certification often costs more, but most of the curriculum is available for free - and Coursera offers scholarships for most of their classes.</p>
+      <p>There are also several online learning sites, such as <a href="https://www.udemy.com/">Udemy</a>, where you can purchase quality, in-depth programming courses for less than $20. That's a far cheaper way to explore a new skill! They also come with course completion certificates, so along with the new projects you'll have in your portfolio, you'll have a new certification to list on your resume!</p>
+      <p>Finally, <a href="https://www.meetup.com/">Meetup.com</a> is a great place to start networking. Over 50% of new jobs are never publicly posted, so get out there, find the tech networking groups in your area, and start shaking some hands!</p>
+    </div>
+
+  <div class="hidden bootcamp-result portland-bootcamp-result border border-success" id="pdx-code-guild">
+    <h3>You might be interested in the PDX Code Guild!</h3>
+    <p>The <a href="https://pdxcodeguild.com/about_pdx_code_guild/" target="_blank">PDX Code Guild</a> offers full and part-time immersive bootcamp programs in Portland, OR. Unlike the other bootcamps in town, they focus primarly on Python, and they offer an <a href="https://pdxcodeguild.com/javascript_course_pdx_code_guild/" target="_blank">Advanced JavaScript course</a> about Node and React. They also offer needs-based scholarships, which helps with the hefty cost of tuition.</p>
+  </div>
+
+  <div class="hidden border border-warning bootcamp-result portland-bootcamp-result lgbtq-result diversity-result" id="epicodus">
+  </div>
+
+  <div class="hidden bootcamp-result portland-bootcamp-result lgbtq-result diversity-result advanced-result" id="alchemy-code-lab">
+    <h3>You might be interested in <strong>Alchemy Code Lab!</strong></h3>
+    <p><a href="https://www.alchemycodelab.com/" target="_blank">Alchemy Code Lab</a> is yet <em>another</em> full-time, immersive bootcamp in Portland, Oregon, taught in person in their downtown location. Like its local competitors, Alchemy Code Lab teaches the fundamentals of HTML, CSS, and JavaScript in just a handful of months, promising salaries of over $70k upon graduation.
+    </p>
+    <p>In the <a href="https://www.alchemycodelab.com/who-we-are" target="_blank">Who We Are</a> section of their website, Alchemy states that they value diversity, and intentionally welcome women, LGBTQ people, and veterans, among others. They also partner with local organizations to make scholarships possible for these diverse populations.</p>
+  </div>
+
+  <div class="hidden border border-info bootcamp-result online-bootcamp-result online-result" id="the-tech-academy">
+    <h3>You might be interested in <strong>The Tech Academy!</strong></h3>
+    <p>While <a href="https://www.learncodinganywhere.com/TheTechAcademyPortland" target="_blank">The Tech Academy</a> has physical locations in both Portland and Seattle, they also offer online, self-paced bootcamps that you can take from anywhere in the world. They offer a wide variety of languages, and the option to learn at home, at your own speed.</p>
+  </div>
+
+  <div class="hidden border border-light" id="end-message">
+    <p>All that being said, is it <em>really</em> worth the $8-20k you're about to drop on a code course, especially when there are so many free and affordable alternatives? That's up to you!</p>
+    <div class="end-nav">
+      <button type="button" class="btn btn-success btn-group">View Free Resources</button>
+      <button type="button" class="btn btn-default btn-group">View All Resources</button>
+      <button type="button" class="btn btn-primary btn-group">Take the quiz again!</button>
+    </div>
+  </div>
+
+  <!-- <div class="hidden" id="end-nav-free">
+    <button type="button" class="btn btn-info btn-group">View All Resources</button>
+    <button type="button" class="btn btn-primary btn-group">Take the quiz again!</button>
+  </div> -->
+  </div>
+  </body>
+</html>
