@@ -5,7 +5,7 @@ _My second project for the Epicodus Intro to Programming Course. Created 06.05.2
 ## Description
 A simple quiz made with jQuery to help people learn about the resources for learning how to code in Portland, Oregon.
 
-##To take the quiz:
+## To take the quiz:
 Visit its github page at _https://wrunion.github.io/epicodus-project-2/_
 
 ## Setup
@@ -21,9 +21,6 @@ None. Please contact me if you encounter one.
 
 ## Contact
 If you have questions, feel free to reach out to me at winterrunion@gmail.com.
-
-## GitHub Pages
-You can view my code here: https://wrunion.github.io/portfolio-landing-page/.
 
 ## Legal
 
