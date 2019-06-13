@@ -12,8 +12,10 @@
   </head>
   <body>
     <div class="container">
-      <h1>Learn to code in Portland, Oregon</h1>
-      <h4>Do you want to explore a career in programming? Take our quiz to find out which resources may be right for you!</h4>
+      <div id="header">
+        <h1>Learn to code in Portland, Oregon</h1>
+        <h4>Do you want to explore a career in programming? Take our quiz to find out which resources may be right for you!</h4>
+      </div>
 
       <form id="quiz1">
          <p><strong>Do you live in or near Portland, Oregon?</strong></p>
@@ -34,7 +36,7 @@
 
       <form id="quiz2" class="hidden">
 
-        <h5>What is your goal?</h5>
+        <h5>What is your programming goal?</h5>
         <select class="form-control" id="goal">
           <option></option>
           <option value="1">A full-time job in the tech industry</option>
@@ -163,10 +165,10 @@
 
   <div class="hidden border border-light" id="end-message">
     <p>All that being said, is it <em>really</em> worth the $8-20k you're about to drop on a code course, especially when there are so many free and affordable alternatives? That's up to you!</p>
-    <div class="end-nav">
-      <button type="button" class="btn btn-success btn-group">View Free Resources</button>
-      <button type="button" class="btn btn-default btn-group">View All Resources</button>
-      <button type="button" class="btn btn-primary btn-group">Take the quiz again!</button>
+      <div class="end-nav">
+      <a href="#free"><button type="button" class="btn btn-success btn-group" id="show-free">View Free Resources</button></a>
+      <!--<button type="button" class="btn btn-default btn-group" id="show-all">View All Resources</button>-->
+      <button type="button" class="btn btn-primary btn-group" id="try-again">Take the quiz again!</button>
     </div>
   </div>
 

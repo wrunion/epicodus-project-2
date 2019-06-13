@@ -2,6 +2,7 @@ $(document).ready(function() {
   $("form#quiz1").submit(function(event) {
 
     $("form#quiz1").hide();
+    $("#header").hide();
 
     var location = $("input:radio[name=location]:checked").val();
 
@@ -17,11 +18,6 @@ $(document).ready(function() {
     event.preventDefault();
   });
 
-  $("button#try-again").click(function() {
-    location.reload(true);
-  });
-
-
   $("form#quiz2").submit(function(event) {
 
     var experience = $("#experience").val();
@@ -36,9 +32,18 @@ $(document).ready(function() {
     if (isFree === "free") {
       $("#quiz2").hide();
       $("#free").show();
+      $("#end-message").show();
     }
     event.preventDefault();
 
+  });
+
+  $("button#view-free").click(function() {
+    $("#free").show();
+  });
+
+  $("button#try-again").click(function() {
+    location.reload(true);
   });
 });
 

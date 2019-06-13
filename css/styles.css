@@ -8,11 +8,12 @@
 
 h1, h3, h4, {
   text-align: center;
-  padding: 20px;
+  padding: 10px;
 }
 
 h5 {
   text-align: center;
+  padding: 10px;
 }
 
 #quiz1, #quiz2 {
@@ -37,7 +38,8 @@ label {
 }
 
 div {
-  margin: 20px;
+  padding: 5px;
+  margin: 15px;
 }
 
 .center {
@@ -53,4 +55,8 @@ div {
 
 li {
   display: inline;
+}
+
+p {
+  padding: 10px;
 }
