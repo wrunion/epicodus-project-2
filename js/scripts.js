@@ -2,11 +2,11 @@ $(document).ready(function() {
   $("form#quiz1").submit(function(event) {
 
     $("form#quiz1").hide();
-    $("#header").hide();
 
     var location = $("input:radio[name=location]:checked").val();
 
     if (location === "not-Portland") {
+      $("#header").hide();
       $("div#not-Portland").show();
       $("#free").show();
       $("#the-tech-academy").show();
