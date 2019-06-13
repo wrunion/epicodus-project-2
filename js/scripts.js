@@ -31,11 +31,9 @@ $(document).ready(function() {
     var language = $("#language").val();
     var learningEnvironment = $("#online-or-irl").val();
 
-    if (goal === "hobby" || cost != "code-camp") {
+    if (goal === "hobby" || cost !== "code-camp") {
       $("#free").show();
-    }
-
-    if (learningEnvironment === "online") {
+    } else if (learningEnvironment === "online") {
       $("#free").show();
       $("div.online-result").show();
       $("#end-message").show();
@@ -49,12 +47,12 @@ $(document).ready(function() {
       $("#pdx-code-guild").show();
       $("#end-message").show();
     }
-
      else if (cost === "code-camp" && learningEnvironment === "online") {
       $("#free").show();
       $("div.online-result").show();
       $("#end-message").show();
     } else if (cost === "code-camp") {
+      $("#free").show();
       $("div.bootcamp-result").show();
       $("#end-message").show();
     } else {
@@ -63,56 +61,10 @@ $(document).ready(function() {
       $("#end-message").show();
     }
 
-
-
-
-    //
-    // if (experience === "advanced") {
-    //   $("#alchemy-code-lab").show();
-    //   $("#end-message").show();
-    // }
-    //
-    // // if (language === "python" || language === "advanced-js") {
-    // //   $("#pdx-code-guild").show();
-    // //   $("#end-message").show();
-    // // }
-
     event.preventDefault();
   });
-
-
-  // $("button#view-free").click(function() {
-  //   $("#free").show();
-  // });
 
   $("button#try-again").click(function() {
     location.reload(true);
   });
 });
-
-
-// $(document).ready(function() {
-//
-// $("form#quiz").submit(function(event) {
-//
-// var answer = $("input:radio[name=gayorstraight]:checked").val();
-//
-// console.log(answer);
-//
-// if (answer === "gay") {
-//   $("div#gay-message").show();
-// } else {
-//   $("div#straight-message").show();
-// }
-//
-// /*$(".hidden").show();
-// $("#gay-message").show();*/
-//
-// event.preventDefault();
-// });
-//
-// $("button#try-again").click(function() {
-// location.reload(true);
-// });
-//
-// });
