@@ -41,7 +41,7 @@
           <option></option>
           <option value="1">A full-time job in the tech industry</option>
           <option value="2">To upgrade my existing skills</option>
-          <option value="free">To learn for personal enrichment/as a hobby</option>
+          <option value="hobby">To learn for personal enrichment/as a hobby</option>
         </select>
 
         <h5>How much coding experience do you have?</h5>
@@ -53,16 +53,17 @@
           <option value="advanced">Advanced - I work in the industry, and am looking to upgrade my skills</option>
         </select>
 
+        <!--Note: make this into a check box!!-->
         <h5>Which language(s) do you want to learn?</h5>
         <select class="form-control" id="language">
           <option></option>
           <option value="1">HTML, CSS, and Javascript</option>
           <option value="python">Python</option>
           <option value="advanced-js">Advanced Javascript (Node, React)</option>
-          <option value="4">Unsure, or all of the above</option>
+          <option value="4">Unsure</option>
         </select>
 
-        <!--<h5>Do you want to learn online, or in person?</h5>
+        <h5>Do you want to learn online, or in person?</h5>
         <select class="form-control" id="online-or-irl">
           <option></option>
           <option value="online">Online</option>
@@ -77,7 +78,7 @@
           <option value="<$100">Less than $100</option>
           <option value="<$1000">Less than $1,000</option>
           <option value="code-camp">$8k-20k, for a fulltime "bootcamp" program</option>
-        </select>-->
+        </select>
 
 
         <div class="button">
@@ -132,8 +133,8 @@
 
 <!--Hidden divs that show the user their result:-->
 
-    <div class="hidden" id="results-msg">
-      <h3>Here are your results!</h3>
+    <div class="hidden border border-light" id="results-msg">
+      <h3 class="text-primary" id="h3-results">Here are your results!</h3>
     </div>
     <div class="hidden border border-light" id="not-Portland">
       <h3 class="text-success">This site focuses on resources available in Portland, Oregon, but here are some resources you can access from anywhere:</h3></p>
@@ -146,13 +147,13 @@
       <p>Finally, <a href="https://www.meetup.com/">Meetup.com</a> is a great place to start networking. Over 50% of new jobs are never publicly posted, so get out there, find the tech networking groups in your area, and start shaking some hands!</p>
     </div>
 
-  <div class="hidden bootcamp-result portland-bootcamp-result border border-success" id="pdx-code-guild">
-    <h3>You might be interested in the PDX Code Guild!</h3>
+  <div class="hidden bootcamp-result portland-bootcamp-result border border-success python advanced advanced-js" id="pdx-code-guild">
+    <h3>You might be interested in <strong>The PDX Code Guild!</strong></h3>
     <p>The <a href="https://pdxcodeguild.com/about_pdx_code_guild/" target="_blank">PDX Code Guild</a> offers full and part-time immersive bootcamp programs in Portland, OR. Unlike the other bootcamps in town, they focus primarly on Python, and they offer an <a href="https://pdxcodeguild.com/javascript_course_pdx_code_guild/" target="_blank">Advanced JavaScript course</a> about Node and React. They also offer needs-based scholarships, which helps with the hefty cost of tuition.</p>
   </div>
 
-  <div class="hidden border border-warning bootcamp-result portland-bootcamp-result lgbtq-result diversity-result" id="epicodus">
-  </div>
+  <!-- <div class="hidden border border-warning bootcamp-result portland-bootcamp-result lgbtq-result diversity-result" id="epicodus">
+  </div> -->
 
   <div class="hidden bootcamp-result portland-bootcamp-result lgbtq-result diversity-result advanced-result" id="alchemy-code-lab">
     <h3>You might be interested in <strong>Alchemy Code Lab!</strong></h3>
@@ -168,10 +169,11 @@
 
   <div class="hidden border border-light" id="end-message">
     <p>All that being said, is it <em>really</em> worth the $8-20k you're about to drop on a code course, especially when there are so many free and affordable alternatives? That's up to you!</p>
-      <div class="end-nav">
+  </div>
+    <div class="hidden" id="end-nav">
       <!--<a href="#free"><button type="button" class="btn btn-success btn-group" id="show-free">View Free Resources</button></a>
       <button type="button" class="btn btn-default btn-group" id="show-all">View All Resources</button>-->
-      <button type="button" class="btn btn-primary btn-group" id="try-again">Take the quiz again!</button>
+    <button type="button" class="btn btn-primary btn-group" id="try-again">Take the quiz again!</button>
     </div>
   </div>
 
