@@ -52,7 +52,7 @@
           <option value="3">Moderate - I've written simple programs</option>
           <option value="advanced">Advanced - I work in the industry, and am looking to upgrade my skills</option>
         </select>
-<!--
+
         <h5>Which language(s) do you want to learn?</h5>
         <select class="form-control" id="language">
           <option></option>
@@ -62,7 +62,7 @@
           <option value="4">Unsure, or all of the above</option>
         </select>
 
-        <h5>Do you want to learn online, or in person?</h5>
+        <!--<h5>Do you want to learn online, or in person?</h5>
         <select class="form-control" id="online-or-irl">
           <option></option>
           <option value="online">Online</option>
@@ -131,9 +131,12 @@
   c) To learn for personal enrichment/as a hobby-->
 
 <!--Hidden divs that show the user their result:-->
-    <div class="hidden border border-primary" id="not-Portland">
-      <p><strong><em>This site focuses on resources available in Portland, Oregon, but here are some resources you can access from anywhere:</em></strong></p>
-      <!--<p><button type="btn btn-default" id="try-again">Click here to clear the form and try again!</button></p>-->
+
+    <div class="hidden" id="results-msg">
+      <h3>Here are your results!</h3>
+    </div>
+    <div class="hidden border border-light" id="not-Portland">
+      <h3 class="text-success">This site focuses on resources available in Portland, Oregon, but here are some resources you can access from anywhere:</h3></p>
     </div>
 
     <div class="hidden free-resources affordable-resources online-resources online-result border border-secondary" id="free">
@@ -153,7 +156,7 @@
 
   <div class="hidden bootcamp-result portland-bootcamp-result lgbtq-result diversity-result advanced-result" id="alchemy-code-lab">
     <h3>You might be interested in <strong>Alchemy Code Lab!</strong></h3>
-    <p><a href="https://www.alchemycodelab.com/" target="_blank">Alchemy Code Lab</a> is yet <em>another</em> full-time, immersive bootcamp in Portland, Oregon, taught in person in their downtown location. Like its local competitors, Alchemy Code Lab teaches the fundamentals of HTML, CSS, and JavaScript in just a handful of months, promising salaries of over $70k upon graduation.
+    <p><a href="https://www.alchemycodelab.com/" target="_blank">Alchemy Code Lab</a> is another full-time, immersive bootcamp in Portland, Oregon, taught in person in their downtown location. Like its local competitors, Alchemy Code Lab teaches the fundamentals of HTML, CSS, and JavaScript in just a handful of months, promising salaries of over $70k upon graduation.
     </p>
     <p>In the <a href="https://www.alchemycodelab.com/who-we-are" target="_blank">Who We Are</a> section of their website, Alchemy states that they value diversity, and intentionally welcome women, LGBTQ people, and veterans, among others. They also partner with local organizations to make scholarships possible for these diverse populations.</p>
   </div>
@@ -166,8 +169,8 @@
   <div class="hidden border border-light" id="end-message">
     <p>All that being said, is it <em>really</em> worth the $8-20k you're about to drop on a code course, especially when there are so many free and affordable alternatives? That's up to you!</p>
       <div class="end-nav">
-      <a href="#free"><button type="button" class="btn btn-success btn-group" id="show-free">View Free Resources</button></a>
-      <!--<button type="button" class="btn btn-default btn-group" id="show-all">View All Resources</button>-->
+      <!--<a href="#free"><button type="button" class="btn btn-success btn-group" id="show-free">View Free Resources</button></a>
+      <button type="button" class="btn btn-default btn-group" id="show-all">View All Resources</button>-->
       <button type="button" class="btn btn-primary btn-group" id="try-again">Take the quiz again!</button>
     </div>
   </div>

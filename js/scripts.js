@@ -20,23 +20,33 @@ $(document).ready(function() {
 
   $("form#quiz2").submit(function(event) {
 
+    $("form#quiz2").hide();
+    // $("#results-msg").show();
+
     var experience = $("#experience").val();
     var cost = $("#amount").val();
     var isFree = $("#goal").val();
+    var language = ("#language").val();
+
+      //   if (isFree === "free") {
+      //   $("#free").show();
+      //   $("#end-nav").show();
+      // }
 
     if (experience === "advanced") {
       $("#alchemy-code-lab").show();
       $("#end-message").show();
     }
 
-    if (isFree === "free") {
-      $("#quiz2").hide();
-      $("#free").show();
-      $("#end-message").show();
-    }
+    // if (language === "python" || language === "advanced-js") {
+    //   $("#pdx-code-guild").show();
+    //   $("#end-message").show();
+    // }
+
     event.preventDefault();
 
   });
+
 
   $("button#view-free").click(function() {
     $("#free").show();
