@@ -20,7 +20,7 @@ $(document).ready(function() {
   });
 
   $("form#quiz2").submit(function(event) {
-
+    $("#header").hide();
     $("form#quiz2").hide();
     $("#results-msg").show();
     $("#end-nav").show();
